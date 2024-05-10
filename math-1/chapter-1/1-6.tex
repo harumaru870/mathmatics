@@ -1,0 +1,37 @@
+\documentclass[8pt,dvipdfmx]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr} % ヘッダーとフッターをカスタマイズするためのパッケージ
+
+\geometry{top=25mm, headheight=15mm} % ヘッダーに十分なスペースを確保
+
+\pagestyle{fancy}
+\fancyhf{} % 既存のヘッダーとフッターをクリア
+\fancyhead[C]{関数と方程式(1)} % ヘッダーの中央にテキストを配置
+\renewcommand{\headrulewidth}{2pt} % ヘッダーの下の線の太さ
+\renewcommand{\footrulewidth}{0pt} % フッターの線は表示しない
+
+\begin{document}
+
+% 問題セクション
+\begin{tcolorbox}[title=数学\textcircled{1} 1-6 BC]
+aは実数の定数とする．xの2次関数
+\[
+f(x) = x^2 - 2ax + a^2 +1
+\]
+の\(-1 \leqq x \leqq 1\) における最小値を\(m(a)\),最大値を\(M(a)\)とする．
+\begin{enumerate}
+    \item[(1)] \(m(a)\)を求めよ．
+    \vspace{2mm} % 問題間のスペース
+    \item[(2)] \(M(a)\)を求めよ．
+    \vspace{2mm} % 問題間のスペース
+    \item[(3)] \(M(a)-m(a)\)の最小値とその時の\(a\)を求めよ．
+\end{enumerate}
+\end{tcolorbox}
+
+% 計算スペース
+\end{document}

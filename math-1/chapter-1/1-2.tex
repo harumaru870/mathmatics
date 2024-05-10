@@ -1,0 +1,31 @@
+\documentclass[8pt,dvipdfmx]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr} % ヘッダーとフッターをカスタマイズするためのパッケージ
+
+\geometry{top=25mm, headheight=15mm} % ヘッダーに十分なスペースを確保
+
+\pagestyle{fancy}
+\fancyhf{} % 既存のヘッダーとフッターをクリア
+\fancyhead[C]{関数と方程式(1)} % ヘッダーの中央にテキストを配置
+\renewcommand{\headrulewidth}{2pt} % ヘッダーの下の線の太さ
+\renewcommand{\footrulewidth}{0pt} % フッターの線は表示しない
+
+\begin{document}
+
+% 問題セクション
+\begin{tcolorbox}[title=数学\textcircled{1} 1-2 AB]
+\section*{問題}
+
+頂点の座標が \((1,2)\) で、点 \((2,3)\) を通る放物線を \(y = f(x)\) とし、3点 \((0,13)\), \((1,8)\), \((2,5)\) を通る放物線を \(y = g(x)\) とする。
+\begin{enumerate}
+    \item[(1)] \(f(x)\) と \(g(x)\) をそれぞれ求めよ。
+    \vspace{2mm} % 問題間のスペース
+    \item[(2)] \(y = g(x)\) を \(x\) 軸方向に \(p\)、\(y\) 軸方向に \(q\) だけ平行移動すると、放物線 \(y = f(x)\) に一致するとき、\(p, q\) の値を求めよ。
+\end{enumerate}
+\end{tcolorbox}
+% 計算スペース
+\end{document}

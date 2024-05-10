@@ -1,0 +1,35 @@
+\documentclass[8pt,dvipdfmx]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr} % ヘッダーとフッターをカスタマイズするためのパッケージ
+
+\geometry{top=25mm, headheight=15mm} % ヘッダーに十分なスペースを確保
+
+\pagestyle{fancy}
+\fancyhf{} % 既存のヘッダーとフッターをクリア
+\fancyhead[C]{関数と方程式(1)} % ヘッダーの中央にテキストを配置
+\renewcommand{\headrulewidth}{2pt} % ヘッダーの下の線の太さ
+\renewcommand{\footrulewidth}{0pt} % フッターの線は表示しない
+
+\begin{document}
+
+% 問題セクション
+\begin{tcolorbox}[title=数学\textcircled{1} 1-4 A]
+aは実数の定数とする．関数
+\[
+f(x) = x^2 - 2ax + 4a + 5
+\]
+について
+\begin{enumerate}
+    \item[(1)] \(0 \leqq x \leqq 1\) における \(f(x)\) の最小値\(m(a)\)を求めよ．
+    \vspace{2mm} % 問題間のスペース
+    \item[(2)] \(0 \leqq x \leqq 1\) における \(g(x)\) の最大値\(M(a)\)を求めよ．
+\end{enumerate}
+\end{tcolorbox}
+
+% 計算スペース
+\end{document}
