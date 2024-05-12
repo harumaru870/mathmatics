@@ -1,0 +1,37 @@
+\documentclass[8pt,dvipdfmx]{article}[b5paper]
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr} % ヘッダーとフッターをカスタマイズするためのパッケージ
+
+\geometry{top=25mm, headheight=15mm} % ヘッダーに十分なスペースを確保
+
+\pagestyle{fancy}
+\fancyhf{} % 既存のヘッダーとフッターをクリア
+\fancyhead[C]{三角関数(1)} % ヘッダーの中央にテキストを配置
+\renewcommand{\headrulewidth}{2pt} % ヘッダーの下の線の太さ
+\renewcommand{\footrulewidth}{0pt} % フッターの線は表示しない
+
+\begin{document}
+
+% 問題セクション
+\begin{tcolorbox}[title=数学\textcircled{\scriptsize 3} 1-5 ABC]
+  \begin{enumerate}[(1)]
+ \item $\cos \alpha = \dfrac{3}{5}$, $\sin \beta = \dfrac{5}{13}$, $0 < \alpha < \dfrac{\pi}{2}$, $\alpha < \beta < \dfrac{\pi}{2}$ のとき、以下の式をそれぞれ求めよ。
+    \begin{enumerate}
+        \item $\sin(\alpha + \beta)$
+        \item $\cos(\alpha + \beta)$
+    \end{enumerate}
+    \item $0 \leqq \theta < 2\pi$ のとき、以下の方程式、不等式をそれぞれ解け。
+    \begin{enumerate}
+        \item $\cos 2\theta + \sin \theta - 1 = 0$
+        \item $\sin 2\theta < \cos \theta$
+    \end{enumerate}
+\end{enumerate}
+\end{tcolorbox}
+% 計算スペース
+\end{document}

@@ -1,0 +1,50 @@
+\documentclass[8pt,dvipdfmx]{article}[b5paper]
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable,theorems,skins}
+\usepackage{geometry}
+\usepackage{fancyhdr} % ヘッダーとフッターをカスタマイズするためのパッケージ
+
+\geometry{top=25mm, headheight=15mm} % ヘッダーに十分なスペースを確保
+
+\pagestyle{fancy}
+\fancyhf{} % 既存のヘッダーとフッターをクリア
+\fancyhead[C]{三角関数(1)} % ヘッダーの中央にテキストを配置
+\renewcommand{\headrulewidth}{2pt} % ヘッダーの下の線の太さ
+\renewcommand{\footrulewidth}{0pt} % フッターの線は表示しない
+
+\definecolor{safecolor}{rgb}{0.2, 0.4, 0.8}
+
+\newtcolorbox{kousiki}[2][]%%%〇〇の定理
+{enhanced,%%%tikzを用いた記法の処理
+left=22pt,right=22pt,%%%box内左右の余白
+fonttitle=\gtfamily\bfseries\large,%%%タイトルのフォント指定
+coltitle=white,%%%タイトルの文字の色
+colbacktitle=blue!50!black,%%%タイトルの背景の色
+attach boxed title to top left={},%%%タイトルを左寄せに、少し微調整
+boxed title style={skin=enhancedfirst jigsaw,arc=1mm,bottom=0mm,boxrule=0mm},%%%タイトルボックスの装飾
+boxrule=0.5pt,%%%枠線の太さ
+colback=safecolor!5!,%%%本文の背景色
+colframe=safecolor,%%%本文の枠の色
+sharp corners=northwest,%%%左上の角の調整 
+drop fuzzy shadow,%%%影をつける
+breakable,%%%ページマタギOK
+title=\vspace{3mm}#2,%%%タイトルは直接入力
+arc=1mm,%弧
+fontupper=\gtfamily,%本文のフォントを太く（数式は除く）
+#1}%
+%上記までプリアンブル
+
+
+\begin{document}
+
+% 問題セクション
+\begin{kousiki}{数学\textcircled{\scriptsize 3} 1-7 C}
+関数 $f(x) = \cos\left(\dfrac{x}{3}\right) + \cos\left(\dfrac{x}{2}\right)$の基本周期(周期のうち、正で最小のもの)を求めよ。
+\end{kousiki}
+% 計算スペース
+\end{document}
